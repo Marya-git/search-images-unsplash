@@ -1,5 +1,7 @@
 import './SearchBar.css';
 import { useState } from 'react';
+import SearchIcon from '../search-icon.png';
+
 
 function SearchBar({ onSubmit }) {
   const [term, setTerm] = useState('');
@@ -16,9 +18,13 @@ function SearchBar({ onSubmit }) {
 
   return (
     <div className="search-bar">
+      <h2 className='title' >Welcome! Images Search App using React and Unsplash API </h2>
       <form onSubmit={handleFormSubmit}>
-        <label>Enter Search Term</label>
-        <input value={term} onChange={handleChange} />
+        <input type='search' placeholder='Search Anything ...' value={term} onChange={handleChange} />
+        <button>
+          <img src={SearchIcon} className='imgbutton' alt='search icon'/>
+          
+        </button>
       </form>
     </div>
   );

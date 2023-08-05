@@ -13,7 +13,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div style={{padding: '40px'}}>
       <SearchBar onSubmit={handleSubmit} />
       <ImageList images={images} />
     </div>

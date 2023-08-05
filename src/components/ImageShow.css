@@ -1,0 +1,16 @@
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 5px;
+    margin: 2px;
+    box-shadow: 0px 3px 4px lightgray;
+}
+
+.imgdiv {
+    height: 200px;
+}
